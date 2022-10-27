@@ -107,13 +107,13 @@ with col1:
     st.metric(
         label='PBI del País',
         value= round(mesActualPbi,2),
-        delta= round(((mesAnteriorPbi-mesActualPbi)/mesAnteriorPbi)*100,2)
+        delta= round(-((mesAnteriorPbi-mesActualPbi)/mesAnteriorPbi)*100,2)
     )
 with col2:
     st.metric(
         label='Esperanza de Vida (Años)',
         value= round(mesActualYear),
-        delta= round(((mesAnteriorYear-mesActualYear)/mesAnteriorYear)*100,2)
+        delta= round(-((mesAnteriorYear-mesActualYear)/mesAnteriorYear)*100,2)
     )
 
 # Se consulta la Población total en la base de datos
@@ -139,11 +139,11 @@ with col11:
     st.metric(
         label='Desempleo total de la Población (%)',
         value= round(mesActualPoblacion, 2),
-        delta= round(((mesAnteriorPoblacion-mesActualPoblacion)/mesAnteriorPoblacion)*100,2)
+        delta= round(-((mesAnteriorPoblacion-mesActualPoblacion)/mesAnteriorPoblacion)*100,2)
     )
 with col22:
     st.metric(
         label='Incremento de la Inflación (%)',
         value= round(mesActualinflacion, 2),
-        delta= round(((mesAnteriorinflacion-mesActualinflacion)/mesAnteriorinflacion)*100,2),
+        delta= round(-((mesAnteriorinflacion-mesActualinflacion)/mesAnteriorinflacion)*100,2),
     )
