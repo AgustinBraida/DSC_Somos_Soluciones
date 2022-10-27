@@ -1,6 +1,4 @@
 import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
 from conexion import miConexion
 
 # Paises elegidos
@@ -145,5 +143,5 @@ with col22:
     st.metric(
         label='Incremento de la Inflación (%)',
         value= round(mesActualinflacion, 2),
-        delta= round(-((mesAnteriorinflacion-mesActualinflacion)/mesAnteriorinflacion)*100,2),
+        delta= round(-((mesAnteriorinflacion-mesActualinflacion)/mesAnteriorinflacion)*100,2)
     )
