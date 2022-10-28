@@ -145,3 +145,5 @@ with col22:
         value= round(mesActualinflacion, 2),
         delta= round(-((mesAnteriorinflacion-mesActualinflacion)/mesAnteriorinflacion)*100,2)
     )
+
+    
